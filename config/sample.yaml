@@ -1,0 +1,22 @@
+paths:
+  incoming_dir: /data/incoming
+  staging_dir: /data/staging
+  converting_dir: /data/converting
+  ready_for_library_dir: /data/ready_for_library
+  library_dir: /data/library
+  converted_dir: /data/converted
+  failed_dir: /data/failed
+  logs_dir: /data/logs
+  temp_dir: /data/temp
+  metadata_backup_dir: /data/metadata_backups
+output_structure: "{author}/{series}/{series_sequence} - {album}"
+conversion:
+  default_bitrate_kbps: 64
+  default_channels: 1
+  dramatic_audio_bitrate_kbps: 128
+  max_concurrent_jobs: 1
+abs:
+  base_url: ""
+  api_token: ""
+  library_id: ""
+  cache_refresh_hours: 24

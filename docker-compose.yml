@@ -1,0 +1,41 @@
+services:
+  postgres:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_DB: ${POSTGRES_DB:-abs_librarian}
+      POSTGRES_USER: ${POSTGRES_USER:-abs_librarian}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-abs_librarian}
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U $${POSTGRES_USER} -d $${POSTGRES_DB}"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+  app:
+    build: .
+    depends_on:
+      postgres:
+        condition: service_healthy
+    env_file: .env
+    ports:
+      - "8000:8000"
+      - "8550:8550"
+    volumes:
+      - ${AUDIOBOOK_DATA_ROOT:-./data}:/data
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:8000/docs')"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+  worker:
+    build: .
+    depends_on:
+      postgres:
+        condition: service_healthy
+    env_file: .env
+    command: ["python", "-m", "app.workers.worker"]
+    volumes:
+      - ${AUDIOBOOK_DATA_ROOT:-./data}:/data
+volumes:
+  postgres_data:

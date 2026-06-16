@@ -1,13 +1,14 @@
 colorama
 mutagen
-
-# External dependency:
-# FFmpeg and ffprobe must be installed separately and available on PATH.
-#
-# Note:
-# Official FFmpeg builds generally do not include the libfdk_aac encoder.
-# If you want to use codec = libfdk_aac, you may need to build FFmpeg yourself
-# with libfdk_aac support enabled, or install a third-party build that includes it.
-#
-# The converter can fall back to the native FFmpeg AAC encoder if configured:
-# fallback_codec = aac
+fastapi
+uvicorn[standard]
+flet
+sqlalchemy>=2
+psycopg[binary]
+alembic
+pydantic-settings
+passlib[bcrypt]
+python-jose[cryptography]
+httpx
+PyYAML
+pytest

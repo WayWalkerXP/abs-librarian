@@ -22,6 +22,7 @@ from .validation import ValidationManager
 
 def parse_args(argv: list[str]) -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="Convert audiobook files to validated M4B outputs.")
+    parser.add_argument("--mode", choices=("cli", "agent"), default="cli", help="Run interactive CLI mode or non-interactive JSON agent mode.")
     parser.add_argument("--config", default=CONFIG_FILE, help="Path to the INI configuration file.")
     parser.add_argument("--dry-run", action="store_true", help="Analyze and display actions without modifying files.")
     parser.add_argument("--no-color", action="store_true", help="Disable colored console output.")
@@ -34,6 +35,9 @@ def main(argv: list[str] | None = None) -> int:
     """Program entry point."""
 
     args = parse_args(argv if argv is not None else sys.argv[1:])
+    if args.mode == "agent":
+        from app.converter.agent import run_agent
+        return run_agent(sys.stdin)
     start_time = time.monotonic()
     repo_cwd = Path.cwd()
     config_path = Path(args.config).expanduser()
