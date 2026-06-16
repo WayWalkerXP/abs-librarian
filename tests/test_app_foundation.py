@@ -88,3 +88,22 @@ def test_converter_agent_json_event_parsing(capsys):
 
 def test_source_files_never_deleted_automatically(tmp_path):
     src=tmp_path/'source.mp3'; src.write_text('audio'); db=db_session(); b=Book(source_path=str(src),status=BookStatus.staging); db.add(b); db.flush(); db.add(BookMetadata(book_id=b.id,title='T',target_bitrate=64,target_channels=1)); db.commit(); ConversionJobService(db).launch([b.id], dry_run=True); assert src.exists()
+
+
+def test_fastapi_root_health_and_favicon_routes():
+    from fastapi.testclient import TestClient
+    from app.main import app
+
+    client = TestClient(app)
+
+    root_response = client.get("/")
+    assert root_response.status_code == 200
+    assert "ABS Librarian" in root_response.text
+    assert "/docs" in root_response.text
+
+    health_response = client.get("/health")
+    assert health_response.status_code == 200
+    assert health_response.json() == {"status": "ok"}
+
+    favicon_response = client.get("/favicon.ico")
+    assert favicon_response.status_code == 204

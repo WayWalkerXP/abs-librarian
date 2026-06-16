@@ -29,8 +29,10 @@ python -m venv .venv
 . .venv/bin/activate
 pip install -r requirements.txt
 cp .env.example .env
-uvicorn app.main:app --reload
+uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload
 ```
+
+Open the local web UI/landing page at <http://localhost:8000/>. FastAPI docs are available at <http://localhost:8000/docs>, and health checks are available at <http://localhost:8000/health>.
 
 On first backend startup, ABS Librarian generates a random initial password, stores only its bcrypt hash in Postgres, and prints the password to logs/stdout. Change it from Settings after first login.
 
@@ -87,7 +89,8 @@ Back up Postgres plus mounted data directories. Metadata backups should be store
 
 ```bash
 pytest
-uvicorn app.main:app --reload
+uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload
+# then open http://localhost:8000/
 python -m app.ui.main
 alembic upgrade head
 ```
