@@ -40,15 +40,15 @@ def book_detail(book_id:str,db:Session=Depends(get_db)):
 @router.put('/books/{book_id}/metadata')
 def update_metadata(book_id:str,payload:dict,db:Session=Depends(get_db)):
     b=db.get(Book,book_id); 
-    if not b or not b.metadata: raise HTTPException(404,'book not found')
+    if not b or not b.book_metadata: raise HTTPException(404,'book not found')
     for k,v in payload.items():
-        if hasattr(b.metadata,k): setattr(b.metadata,k,v)
+        if hasattr(b.book_metadata,k): setattr(b.book_metadata,k,v)
     db.commit(); return {'ok':True}
 @router.get('/books/{book_id}/duplicates')
 def duplicates(book_id:str,db:Session=Depends(get_db)):
     b=db.get(Book,book_id); 
-    if not b or not b.metadata: raise HTTPException(404,'book not found')
-    return DuplicateService(db).find(b.metadata.__dict__)
+    if not b or not b.book_metadata: raise HTTPException(404,'book not found')
+    return DuplicateService(db).find(b.book_metadata.__dict__)
 @router.post('/jobs')
 def launch_job(payload:dict,db:Session=Depends(get_db)):
     job=ConversionJobService(db).launch(payload.get('book_ids',[]), payload.get('dry_run',False), payload.get('move_to_library',False)); return {'id':job.id,'status':job.status.value}

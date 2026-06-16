@@ -13,5 +13,5 @@ class ConversionJobService:
         self.db.add(ConversionEvent(job_id=payload['job_id'], book_id=payload.get('book_id'), event=payload.get('event','log'), stage=payload.get('stage'), percent=payload.get('percent'), message=payload.get('message'), payload=payload)); self.db.commit()
     def mark_running(self, job:ConversionJob): job.status=JobStatus.running; job.started_at=datetime.utcnow(); self.db.commit()
     def validate_book_ready(self, book:Book)->list[str]:
-        if not book.metadata: return ['missing metadata']
-        return validate_conversion_settings(book.metadata.target_bitrate, book.metadata.target_channels)
+        if not book.book_metadata: return ['missing metadata']
+        return validate_conversion_settings(book.book_metadata.target_bitrate, book.book_metadata.target_channels)
