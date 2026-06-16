@@ -33,7 +33,7 @@ class Book(Base):
     source_path: Mapped[str] = mapped_column(Text); book_type: Mapped[str] = mapped_column(String(32), default='single_file')
     failure_reason: Mapped[str|None] = mapped_column(Text); validation_issues: Mapped[list] = mapped_column(JSON, default=list)
     created_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow); updated_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow, onupdate=datetime.utcnow)
-    metadata: Mapped['BookMetadata'] = relationship(back_populates='book', uselist=False, cascade='all, delete-orphan')
+    book_metadata: Mapped['BookMetadata'] = relationship(back_populates='book', uselist=False, cascade='all, delete-orphan')
 class BookFile(Base):
     __tablename__='book_files'
     id: Mapped[int] = mapped_column(Integer, primary_key=True); book_id: Mapped[str] = mapped_column(ForeignKey('books.id'))
@@ -42,7 +42,7 @@ class BookMetadata(Base):
     __tablename__='book_metadata'
     book_id: Mapped[str] = mapped_column(ForeignKey('books.id'), primary_key=True)
     title: Mapped[str|None] = mapped_column(String(500)); subtitle: Mapped[str|None] = mapped_column(String(500)); author: Mapped[str|None] = mapped_column(String(500)); narrator: Mapped[str|None] = mapped_column(String(500)); series: Mapped[str|None] = mapped_column(String(500)); series_sequence: Mapped[str|None] = mapped_column(String(80)); description: Mapped[str|None] = mapped_column(Text); asin: Mapped[str|None] = mapped_column(String(80)); cover: Mapped[str|None] = mapped_column(Text); chapters: Mapped[list] = mapped_column(JSON, default=list); duration: Mapped[float|None] = mapped_column(Integer); target_bitrate: Mapped[int|None] = mapped_column(Integer); target_channels: Mapped[int|None] = mapped_column(Integer); dramatic_audio: Mapped[bool] = mapped_column(Boolean, default=False); manual_overrides: Mapped[dict] = mapped_column(JSON, default=dict)
-    book: Mapped[Book] = relationship(back_populates='metadata')
+    book: Mapped[Book] = relationship(back_populates='book_metadata')
 class Duplicate(Base):
     __tablename__='duplicates'; id: Mapped[int] = mapped_column(Integer, primary_key=True); book_id: Mapped[str] = mapped_column(ForeignKey('books.id')); abs_book_id: Mapped[str] = mapped_column(ForeignKey('abs_cache_books.id')); match_type: Mapped[str] = mapped_column(String(32)); __table_args__=(UniqueConstraint('book_id','abs_book_id','match_type'),)
 class ConversionJob(Base):
