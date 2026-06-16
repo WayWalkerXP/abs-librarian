@@ -100,6 +100,13 @@ def test_fastapi_root_health_and_favicon_routes():
     assert root_response.status_code == 200
     assert "ABS Librarian" in root_response.text
     assert "/docs" in root_response.text
+    assert 'href="/dashboard"' in root_response.text
+    assert 'href="/incoming"' in root_response.text
+    assert 'href="/staging"' in root_response.text
+    assert 'href="/books"' in root_response.text
+    assert 'href="/jobs"' in root_response.text
+    assert 'href="/ready-for-library"' in root_response.text
+    assert 'href="/settings"' in root_response.text
 
     health_response = client.get("/health")
     assert health_response.status_code == 200
@@ -107,3 +114,26 @@ def test_fastapi_root_health_and_favicon_routes():
 
     favicon_response = client.get("/favicon.ico")
     assert favicon_response.status_code == 204
+
+
+def test_fastapi_workflow_navigation_routes_do_not_404():
+    from fastapi.testclient import TestClient
+    from app.main import app
+
+    client = TestClient(app)
+
+    routes = [
+        ("/dashboard", "Dashboard"),
+        ("/incoming", "Incoming / Scan"),
+        ("/staging", "Staging Review"),
+        ("/books", "Book Detail"),
+        ("/book-detail", "Book Detail"),
+        ("/jobs", "Jobs"),
+        ("/ready-for-library", "Ready for Library"),
+        ("/settings", "Settings"),
+    ]
+    for route, title in routes:
+        response = client.get(route)
+        assert response.status_code == 200
+        assert title in response.text
+        assert "not implemented yet" in response.text

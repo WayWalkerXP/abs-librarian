@@ -32,7 +32,23 @@ cp .env.example .env
 uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload
 ```
 
-Open the local web UI/landing page at <http://localhost:8000/>. FastAPI docs are available at <http://localhost:8000/docs>, and health checks are available at <http://localhost:8000/health>.
+Open the local web UI/landing page at <http://localhost:8000/>. FastAPI docs are available at <http://localhost:8000/docs>, health checks are available at <http://localhost:8000/health>, and settings are available at <http://localhost:8000/settings>.
+
+### Local Routes
+
+The landing page links to these local development routes:
+
+- <http://localhost:8000/> — landing page
+- <http://localhost:8000/dashboard> — Dashboard placeholder
+- <http://localhost:8000/incoming> — Incoming / Scan placeholder
+- <http://localhost:8000/staging> — Staging Review placeholder
+- <http://localhost:8000/books> — Book Detail placeholder
+- <http://localhost:8000/book-detail> — alternate Book Detail placeholder
+- <http://localhost:8000/jobs> — Jobs placeholder
+- <http://localhost:8000/ready-for-library> — Ready for Library placeholder
+- <http://localhost:8000/settings> — Settings placeholder
+- <http://localhost:8000/docs> — FastAPI documentation
+- <http://localhost:8000/health> — health check
 
 On first backend startup, ABS Librarian generates a random initial password, stores only its bcrypt hash in Postgres, and prints the password to logs/stdout. Change it from Settings after first login.
 
