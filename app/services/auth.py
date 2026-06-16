@@ -3,7 +3,7 @@ from __future__ import annotations
 import logging
 import secrets
 
-from passlib.context import CryptContext
+import bcrypt
 from sqlalchemy.orm import Session
 
 from app.models.entities import AuthSetting
@@ -11,20 +11,19 @@ from app.models.entities import AuthSetting
 BCRYPT_MAX_PASSWORD_BYTES = 72
 FIRST_RUN_PASSWORD_BYTES = 24
 
-pwd_context = CryptContext(schemes=["bcrypt"], deprecated="auto")
-
 
 class AuthService:
     def __init__(self, db: Session):
         self.db = db
 
-    def _validate_bcrypt_password_length(self, password: str) -> None:
-        password_length = len(password.encode("utf-8"))
-        if password_length > BCRYPT_MAX_PASSWORD_BYTES:
+    def _validate_bcrypt_password_length(self, password: str) -> bytes:
+        password_bytes = password.encode("utf-8")
+        if len(password_bytes) > BCRYPT_MAX_PASSWORD_BYTES:
             raise ValueError(
                 "Password is too long for bcrypt hashing. Please choose a password "
                 f"that is {BCRYPT_MAX_PASSWORD_BYTES} bytes or fewer when UTF-8 encoded."
             )
+        return password_bytes
 
     def generate_first_run_password(self) -> str:
         password = secrets.token_urlsafe(FIRST_RUN_PASSWORD_BYTES)
@@ -32,12 +31,12 @@ class AuthService:
         return password
 
     def hash_password(self, pw: str) -> str:
-        self._validate_bcrypt_password_length(pw)
-        return pwd_context.hash(pw)
+        password_bytes = self._validate_bcrypt_password_length(pw)
+        return bcrypt.hashpw(password_bytes, bcrypt.gensalt()).decode("utf-8")
 
     def verify_password(self, pw: str, hashed: str) -> bool:
-        self._validate_bcrypt_password_length(pw)
-        return pwd_context.verify(pw, hashed)
+        password_bytes = self._validate_bcrypt_password_length(pw)
+        return bcrypt.checkpw(password_bytes, hashed.encode("utf-8"))
 
     def ensure_first_run_password(self) -> str | None:
         existing = self.db.get(AuthSetting, 1)
