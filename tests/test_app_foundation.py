@@ -8,7 +8,7 @@ from sqlalchemy.orm import sessionmaker
 from app.converter.agent import run_agent
 from app.db.session import Base
 from app.models.entities import AbsCacheBook, Book, BookMetadata, BookStatus
-from app.services.auth import AuthService
+from app.services.auth import AuthService, BCRYPT_MAX_PASSWORD_BYTES
 from app.services.duplicates import DuplicateService
 from app.services.filesystem import FilesystemService
 from app.services.jobs import ConversionJobService
@@ -27,6 +27,37 @@ def test_settings_persistence():
 
 def test_password_hashing_auth():
     db=db_session(); svc=AuthService(db); svc.change_password('secret'); assert svc.authenticate('secret'); assert not svc.authenticate('bad')
+
+
+
+def test_first_run_password_generation_is_bcrypt_safe():
+    db = db_session()
+    svc = AuthService(db)
+
+    password = svc.generate_first_run_password()
+
+    assert 24 <= len(password) <= 32
+    assert len(password.encode("utf-8")) <= BCRYPT_MAX_PASSWORD_BYTES
+
+
+def test_first_run_password_can_be_hashed_and_stored():
+    db = db_session()
+    svc = AuthService(db)
+
+    password = svc.ensure_first_run_password()
+
+    assert password is not None
+    assert len(password.encode("utf-8")) <= BCRYPT_MAX_PASSWORD_BYTES
+    assert svc.authenticate(password)
+
+
+def test_too_long_password_fails_with_clear_error():
+    db = db_session()
+    svc = AuthService(db)
+    too_long_password = "a" * (BCRYPT_MAX_PASSWORD_BYTES + 1)
+
+    with pytest.raises(ValueError, match="too long for bcrypt"):
+        svc.hash_password(too_long_password)
 
 def test_metadata_priority_resolution():
     assert resolve_metadata({'title':'embedded'}, {'title':'yaml'}, {'title':'abs'}, {'title':'manual'})['title']=='manual'
