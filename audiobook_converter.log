@@ -1,0 +1,857 @@
+2026-06-16 13:04:33 [INFO] Startup complete; configuration loaded from /home/jlrus/projects/alchemist/audiobook_converter.ini
+2026-06-16 13:04:33 [INFO] Keyboard controls enabled: q=quit, p=pause, Ctrl+C=graceful quit
+2026-06-16 13:04:33 [INFO] Using configured codec: libfdk_aac
+2026-06-16 13:04:33 [INFO] Starting audiobook conversion; dry_run=False
+2026-06-16 13:04:33 [INFO] Discovering direct children under /mnt/c/Users/jlrus/audiobooks_work/staging
+2026-06-16 13:04:33 [INFO] Discovered 3 books to process
+2026-06-16 13:04:33 [INFO] Discovered file: /mnt/c/Users/jlrus/audiobooks_work/staging/01_Gathering_Strength.m4b
+2026-06-16 13:04:33 [INFO] Probe result for /mnt/c/Users/jlrus/audiobooks_work/staging/01_Gathering_Strength.m4b: raw_bitrate=126 kbps, normalized_bitrate=128 kbps, channels=2, codec=aac, duration=54486.91, chapters=40
+2026-06-16 13:04:33 [INFO] Audiobook-relevant source metadata used for /mnt/c/Users/jlrus/audiobooks_work/staging/01_Gathering_Strength.m4b: {'narrator': 'Jack Smith, Anne Marie Lebeaur', 'title': 'Gathering Strength', 'album': 'Gathering Strength', 'artist': 'M. Tress', 'albumartist': 'M. Tress', 'series-part': '5', 'genre': 'Science Fiction & Fantasy / Fantasy / Paranormal & Urban / Paranormal', 'date': '2025', 'description': "Less than two months into his ten years of active-duty service to the Hegemony of Velvet Stars as an adept, and Desmond McLaughlin has already gotten himself embroiled in even more trouble. He's settled in just fine aboard his ship, the Fist of Defiance, and made plenty of friends. But it wouldn't be life if there weren't a few bad apples mixed in. Having clashed several times—once in a very physical fashion—with Adept Windracer, Desmond can only hope that the overly aggressive Uth'ra will stop trying to force him into the mold that she believes a male should occupy. Additionally, more information is coming to light about the strange group he and his instructor had fought with that had been occupying a Rift. A group that had no proper reason to be there beyond trouble, and were suspiciously short on identifying information on their persons. The rabbit-hole only grows deeper as Desmond continues to stumble upon clues, passing them along up the chain of command in hopes that someone will act before it is too late. Things are picking up strength as Desmond and the girls start to get a view of what is at stake. Unwilling to simply allow himself to be swept along with the tide, Arsenal continues to prepare and train themselves, gathering strength for the challenges that stand ahead of them both as an adept and his guards, and as a clan. *** Monster Girls In Space is a Sci-Fi, fantasy, semi-military, men’s romance, progression fantasy about a man becoming a space-wizard amongst a universe full of monster girls (it’s in the title, you should have expected that part). Expect adventure, mischief, magic, fighting, and unconventional relationships in a galaxy that is curious what sort of mischief Humanity will get up to.", 'comment': "Less than two months into his ten years of active-duty service to the Hegemony of Velvet Stars as an adept, and Desmond McLaughlin has already gotten himself embroiled in even more trouble. He's settled in just fine aboard his ship, the Fist of Defiance, and made plenty of friends. But it wouldn't be life if there weren't a few bad apples mixed in. Having clashed several times—once in a very physical fashion—with Adept Windracer, Desmond can only hope that the overly aggressive Uth'ra will stop trying to force him into the mold that she believes a male should occupy. Additionally, more information is coming to light about the strange group he and his instructor had fought with that had been occupying a Rift. A group that had no proper reason to be there beyond trouble, and were suspiciously short on identifying information on their persons. The rabbit-hole only grows deeper as Desmond continues to stumble upon clues, passing them along up the chain of command in hopes that someone will act before it is too late. Things are picking up strength as Desmond and the girls start to get a view of what is at stake. Unwilling to simply allow himself to be swept along with the tide, Arsenal continues to prepare and train themselves, gathering strength for the challenges that stand ahead of them both as an adept and his guards, and as a clan. *** Monster Girls In Space is a Sci-Fi, fantasy, semi-military, men’s romance, progression fantasy about a man becoming a space-wizard amongst a universe full of monster girls (it’s in the title, you should have expected that part). Expect adventure, mischief, magic, fighting, and unconventional relationships in a galaxy that is curious what sort of mischief Humanity will get up to.", 'asin': 'B0FH7LBFF1', 'author': 'M. Tress'}
+2026-06-16 13:04:33 [INFO] Single-file Mutagen metadata for /mnt/c/Users/jlrus/audiobooks_work/staging/01_Gathering_Strength.m4b: author='M. Tress' inferred=False; album='Gathering Strength' inferred=False; asin='B0FH7LBFF1'; target_bitrate_source=override=64 kbps; target_channels_source=override=1; dramatic_audio_status=explicit false
+2026-06-16 13:04:33 [INFO] Dramatic audio not detected for /mnt/c/Users/jlrus/audiobooks_work/staging/01_Gathering_Strength.m4b
+2026-06-16 13:04:33 [INFO] Conversion decision for /mnt/c/Users/jlrus/audiobooks_work/staging/01_Gathering_Strength.m4b: raw=126 kbps, normalized=128 kbps, source_channels=2, output_channels=1, target=64 kbps
+2026-06-16 13:04:33 [INFO] Cover extraction disabled by configuration
+2026-06-16 13:04:33 [INFO] Converting /mnt/c/Users/jlrus/audiobooks_work/staging/01_Gathering_Strength.m4b to temporary output /mnt/c/Users/jlrus/audiobooks_work/processed/M. Tress - Gathering Strength.tmp.m4b
+2026-06-16 13:08:58 [INFO] FFmpeg conversion completed for /mnt/c/Users/jlrus/audiobooks_work/staging/01_Gathering_Strength.m4b
+2026-06-16 13:08:58 [WARNING] Metadata appears missing in output: narrator
+2026-06-16 13:08:58 [WARNING] Metadata appears missing in output: albumartist
+2026-06-16 13:08:58 [WARNING] Metadata appears missing in output: series-part
+2026-06-16 13:08:58 [WARNING] Metadata appears missing in output: asin
+2026-06-16 13:08:58 [WARNING] Metadata appears missing in output: author
+2026-06-16 13:08:58 [WARNING] Metadata appears missing in output: dramatic_audio
+2026-06-16 13:08:58 [INFO] Validation successful: /mnt/c/Users/jlrus/audiobooks_work/processed/M. Tress - Gathering Strength.tmp.m4b
+2026-06-16 13:08:58 [INFO] Promoted temporary output using os.replace: /mnt/c/Users/jlrus/audiobooks_work/processed/M. Tress - Gathering Strength.tmp.m4b -> /mnt/c/Users/jlrus/audiobooks_work/processed/M. Tress - Gathering Strength.m4b
+2026-06-16 13:08:58 [INFO] Promoted temporary output to final output: /mnt/c/Users/jlrus/audiobooks_work/processed/M. Tress - Gathering Strength.m4b
+2026-06-16 13:08:58 [INFO] Embedded cover art preserved from /mnt/c/Users/jlrus/audiobooks_work/staging/01_Gathering_Strength.m4b to /mnt/c/Users/jlrus/audiobooks_work/processed/M. Tress - Gathering Strength.m4b
+2026-06-16 13:08:58 [INFO] Removed existing metadata variant: ©ART
+2026-06-16 13:08:58 [INFO] Removed existing metadata variant: aART
+2026-06-16 13:08:58 [INFO] Mutagen final metadata pass succeeded for /mnt/c/Users/jlrus/audiobooks_work/processed/M. Tress - Gathering Strength.m4b
+2026-06-16 13:08:58 [INFO] Archived original to /mnt/c/Users/jlrus/audiobooks_work/converted/01_Gathering_Strength.m4b
+2026-06-16 13:08:58 [INFO] Conversion and archive successful for /mnt/c/Users/jlrus/audiobooks_work/staging/01_Gathering_Strength.m4b
+2026-06-16 13:08:58 [INFO] Progress: 1/3 processed; 2 remaining; 1 converted; 0 skipped; 0 failed
+2026-06-16 13:08:58 [INFO] Discovered file: /mnt/c/Users/jlrus/audiobooks_work/staging/Ciphers.m4b
+2026-06-16 13:08:58 [INFO] Probe result for /mnt/c/Users/jlrus/audiobooks_work/staging/Ciphers.m4b: raw_bitrate=126 kbps, normalized_bitrate=128 kbps, channels=2, codec=aac, duration=36005.65, chapters=84
+2026-06-16 13:08:58 [INFO] Audiobook-relevant source metadata used for /mnt/c/Users/jlrus/audiobooks_work/staging/Ciphers.m4b: {'narrator': 'Kevin Kenerly', 'title': 'Ciphers', 'subtitle': 'The King & Slater Series, Book 3', 'album': 'Ciphers', 'artist': 'Matt Rogers', 'albumartist': 'Matt Rogers', 'series': 'The King & Slater Series', 'series-part': '3', 'genre': 'Literature & Fiction / Action & Adventure / Mystery, Thriller & Suspense / Thriller & Suspense', 'date': '2021', 'description': 'What happens when the lights go out? King and Slater have fought and warred all over the globe, from the desolate plains of the Russian Far East to the extreme altitudes of Nepal. Now, chaos strikes them at home. New York goes dark as malicious code infects the power grid in a devastating cyberattack. More than eight million people across the five boroughs. No power, no running water, no sanitation. Food supplies will be exhausted within two days, and there’s no one to restock the shelves. The government has no solution to the myriad of problems that come with a major city losing electricity for a prolonged period. All King and Slater know is the code used to knock out critical substations initiated in the heart of Manhattan...and so begins a harrowing race against the clock to get the lights back on before the city plunges into anarchy. They don’t have much time; it doesn’t take long for people to panic. As they fight their way deeper into the bowels of the city, they realize there was a reason New York was targeted. Make as many enemies as they do, and it’s bound to catch up with you eventually.', 'comment': 'What happens when the lights go out? King and Slater have fought and warred all over the globe, from the desolate plains of the Russian Far East to the extreme altitudes of Nepal. Now, chaos strikes them at home. New York goes dark as malicious code infects the power grid in a devastating cyberattack. More than eight million people across the five boroughs. No power, no running water, no sanitation. Food supplies will be exhausted within two days, and there’s no one to restock the shelves. The government has no solution to the myriad of problems that come with a major city losing electricity for a prolonged period. All King and Slater know is the code used to knock out critical substations initiated in the heart of Manhattan...and so begins a harrowing race against the clock to get the lights back on before the city plunges into anarchy. They don’t have much time; it doesn’t take long for people to panic. As they fight their way deeper into the bowels of the city, they realize there was a reason New York was targeted. Make as many enemies as they do, and it’s bound to catch up with you eventually.', 'language': 'english', 'asin': '1774246953', 'isbn': '9781774246955', 'author': 'Matt Rogers'}
+2026-06-16 13:08:58 [INFO] Single-file Mutagen metadata for /mnt/c/Users/jlrus/audiobooks_work/staging/Ciphers.m4b: author='Matt Rogers' inferred=False; album='Ciphers' inferred=False; asin='1774246953'; target_bitrate_source=override=64 kbps; target_channels_source=override=1; dramatic_audio_status=explicit false
+2026-06-16 13:08:58 [INFO] Dramatic audio not detected for /mnt/c/Users/jlrus/audiobooks_work/staging/Ciphers.m4b
+2026-06-16 13:08:58 [INFO] Conversion decision for /mnt/c/Users/jlrus/audiobooks_work/staging/Ciphers.m4b: raw=126 kbps, normalized=128 kbps, source_channels=2, output_channels=1, target=64 kbps
+2026-06-16 13:08:58 [INFO] Cover extraction disabled by configuration
+2026-06-16 13:08:58 [INFO] Converting /mnt/c/Users/jlrus/audiobooks_work/staging/Ciphers.m4b to temporary output /mnt/c/Users/jlrus/audiobooks_work/processed/Matt Rogers - Ciphers.tmp.m4b
+2026-06-16 13:12:09 [INFO] FFmpeg conversion completed for /mnt/c/Users/jlrus/audiobooks_work/staging/Ciphers.m4b
+2026-06-16 13:12:09 [WARNING] Metadata appears missing in output: narrator
+2026-06-16 13:12:09 [WARNING] Metadata appears missing in output: subtitle
+2026-06-16 13:12:09 [WARNING] Metadata appears missing in output: albumartist
+2026-06-16 13:12:09 [WARNING] Metadata appears missing in output: series
+2026-06-16 13:12:09 [WARNING] Metadata appears missing in output: series-part
+2026-06-16 13:12:09 [WARNING] Metadata appears missing in output: asin
+2026-06-16 13:12:09 [WARNING] Metadata appears missing in output: isbn
+2026-06-16 13:12:09 [WARNING] Metadata appears missing in output: author
+2026-06-16 13:12:09 [WARNING] Metadata appears missing in output: dramatic_audio
+2026-06-16 13:12:09 [INFO] Validation successful: /mnt/c/Users/jlrus/audiobooks_work/processed/Matt Rogers - Ciphers.tmp.m4b
+2026-06-16 13:12:09 [INFO] Promoted temporary output using os.replace: /mnt/c/Users/jlrus/audiobooks_work/processed/Matt Rogers - Ciphers.tmp.m4b -> /mnt/c/Users/jlrus/audiobooks_work/processed/Matt Rogers - Ciphers.m4b
+2026-06-16 13:12:09 [INFO] Promoted temporary output to final output: /mnt/c/Users/jlrus/audiobooks_work/processed/Matt Rogers - Ciphers.m4b
+2026-06-16 13:12:09 [INFO] Embedded cover art preserved from /mnt/c/Users/jlrus/audiobooks_work/staging/Ciphers.m4b to /mnt/c/Users/jlrus/audiobooks_work/processed/Matt Rogers - Ciphers.m4b
+2026-06-16 13:12:09 [INFO] Removed existing metadata variant: ©ART
+2026-06-16 13:12:09 [INFO] Removed existing metadata variant: aART
+2026-06-16 13:12:09 [INFO] Mutagen final metadata pass succeeded for /mnt/c/Users/jlrus/audiobooks_work/processed/Matt Rogers - Ciphers.m4b
+2026-06-16 13:12:09 [INFO] Archived original to /mnt/c/Users/jlrus/audiobooks_work/converted/Ciphers.m4b
+2026-06-16 13:12:09 [INFO] Conversion and archive successful for /mnt/c/Users/jlrus/audiobooks_work/staging/Ciphers.m4b
+2026-06-16 13:12:09 [INFO] Progress: 2/3 processed; 1 remaining; 2 converted; 0 skipped; 0 failed
+2026-06-16 13:12:09 [INFO] Discovered file: /mnt/c/Users/jlrus/audiobooks_work/staging/Confident Stride_ Steelforged Legacy, Book 2.m4b
+2026-06-16 13:12:09 [INFO] Probe result for /mnt/c/Users/jlrus/audiobooks_work/staging/Confident Stride_ Steelforged Legacy, Book 2.m4b: raw_bitrate=126 kbps, normalized_bitrate=128 kbps, channels=2, codec=aac, duration=39798.62, chapters=34
+2026-06-16 13:12:09 [INFO] Audiobook-relevant source metadata used for /mnt/c/Users/jlrus/audiobooks_work/staging/Confident Stride_ Steelforged Legacy, Book 2.m4b: {'narrator': 'Lewis Alexander, Rozelyn Rader', 'title': 'Confident Stride', 'album': 'Confident Stride', 'artist': 'M. Tress', 'albumartist': 'M. Tress', 'series-part': '2', 'genre': 'Science Fiction & Fantasy / Fantasy / Action & Adventure', 'date': '2025', 'description': "Settling into the new pace of his life, Casey Sullivan thought that he’d left behind the idiocy of people with overinflated senses of self worth. But even on another world, around people that worked magic into their everyday life but owed their allegiance to the Norse gods of old, one truth remains: You can’t fix stupid. Thankfully, it’s possible to muffle the idiocy of people that he doesn’t want to deal with, as long as Casey keeps moving. All except for the bit of four-legged mischief that has decided to follow him. After his last battle—in which Casey was forced to face off against a young master to the Bronze Fist clan—Casey now has a friend to talk to besides his lover, Maude. Though the looks he might draw from talking to an elk are about as strange as the ones he was getting for conversing with his weapon. The young Gladewalker Elk, a fantastical creature that hunters prize as one of the greatest types of prey, has decided to tag along with Casey’s adventures. Now whether that is to repay the favor, or because he likes the snacks that Casey has with him is entirely up to the judgment of the observer. As a trio of misfits, Casey, Maude, and the Gladewalker Elk have to find a way to slip out of the Bronze Fist lands before someone notices the missing scion and figures out what happened to him. All while still moving north, drawn by the call of the Roaring Mountain clan, where Casey hopes to reunite with his friend Einar. Steelforged Legacy is a progression fantasy, men's romance, western cultivation story that takes heavy inspiration from classic cultivation and combines it with an alternate take on Norse mythology. Even the gods can't always see the future right, and the world it is set in takes advantage of the fact that sometimes, even the Fates can make mistakes.", 'comment': "Settling into the new pace of his life, Casey Sullivan thought that he’d left behind the idiocy of people with overinflated senses of self worth. But even on another world, around people that worked magic into their everyday life but owed their allegiance to the Norse gods of old, one truth remains: You can’t fix stupid. Thankfully, it’s possible to muffle the idiocy of people that he doesn’t want to deal with, as long as Casey keeps moving. All except for the bit of four-legged mischief that has decided to follow him. After his last battle—in which Casey was forced to face off against a young master to the Bronze Fist clan—Casey now has a friend to talk to besides his lover, Maude. Though the looks he might draw from talking to an elk are about as strange as the ones he was getting for conversing with his weapon. The young Gladewalker Elk, a fantastical creature that hunters prize as one of the greatest types of prey, has decided to tag along with Casey’s adventures. Now whether that is to repay the favor, or because he likes the snacks that Casey has with him is entirely up to the judgment of the observer. As a trio of misfits, Casey, Maude, and the Gladewalker Elk have to find a way to slip out of the Bronze Fist lands before someone notices the missing scion and figures out what happened to him. All while still moving north, drawn by the call of the Roaring Mountain clan, where Casey hopes to reunite with his friend Einar. Steelforged Legacy is a progression fantasy, men's romance, western cultivation story that takes heavy inspiration from classic cultivation and combines it with an alternate take on Norse mythology. Even the gods can't always see the future right, and the world it is set in takes advantage of the fact that sometimes, even the Fates can make mistakes.", 'asin': 'B0FBYVJY1M', 'author': 'M. Tress'}
+2026-06-16 13:12:09 [INFO] Single-file Mutagen metadata for /mnt/c/Users/jlrus/audiobooks_work/staging/Confident Stride_ Steelforged Legacy, Book 2.m4b: author='M. Tress' inferred=False; album='Confident Stride' inferred=False; asin='B0FBYVJY1M'; target_bitrate_source=override=64 kbps; target_channels_source=override=1; dramatic_audio_status=explicit false
+2026-06-16 13:12:09 [INFO] Dramatic audio not detected for /mnt/c/Users/jlrus/audiobooks_work/staging/Confident Stride_ Steelforged Legacy, Book 2.m4b
+2026-06-16 13:12:09 [INFO] Conversion decision for /mnt/c/Users/jlrus/audiobooks_work/staging/Confident Stride_ Steelforged Legacy, Book 2.m4b: raw=126 kbps, normalized=128 kbps, source_channels=2, output_channels=1, target=64 kbps
+2026-06-16 13:12:09 [INFO] Cover extraction disabled by configuration
+2026-06-16 13:12:09 [INFO] Converting /mnt/c/Users/jlrus/audiobooks_work/staging/Confident Stride_ Steelforged Legacy, Book 2.m4b to temporary output /mnt/c/Users/jlrus/audiobooks_work/processed/M. Tress - Confident Stride.tmp.m4b
+2026-06-16 13:15:21 [INFO] FFmpeg conversion completed for /mnt/c/Users/jlrus/audiobooks_work/staging/Confident Stride_ Steelforged Legacy, Book 2.m4b
+2026-06-16 13:15:21 [WARNING] Metadata appears missing in output: narrator
+2026-06-16 13:15:21 [WARNING] Metadata appears missing in output: albumartist
+2026-06-16 13:15:21 [WARNING] Metadata appears missing in output: series-part
+2026-06-16 13:15:21 [WARNING] Metadata appears missing in output: asin
+2026-06-16 13:15:21 [WARNING] Metadata appears missing in output: author
+2026-06-16 13:15:21 [WARNING] Metadata appears missing in output: dramatic_audio
+2026-06-16 13:15:21 [INFO] Validation successful: /mnt/c/Users/jlrus/audiobooks_work/processed/M. Tress - Confident Stride.tmp.m4b
+2026-06-16 13:15:21 [INFO] Promoted temporary output using os.replace: /mnt/c/Users/jlrus/audiobooks_work/processed/M. Tress - Confident Stride.tmp.m4b -> /mnt/c/Users/jlrus/audiobooks_work/processed/M. Tress - Confident Stride.m4b
+2026-06-16 13:15:21 [INFO] Promoted temporary output to final output: /mnt/c/Users/jlrus/audiobooks_work/processed/M. Tress - Confident Stride.m4b
+2026-06-16 13:15:21 [INFO] Embedded cover art preserved from /mnt/c/Users/jlrus/audiobooks_work/staging/Confident Stride_ Steelforged Legacy, Book 2.m4b to /mnt/c/Users/jlrus/audiobooks_work/processed/M. Tress - Confident Stride.m4b
+2026-06-16 13:15:21 [INFO] Removed existing metadata variant: ©ART
+2026-06-16 13:15:21 [INFO] Removed existing metadata variant: aART
+2026-06-16 13:15:21 [INFO] Mutagen final metadata pass succeeded for /mnt/c/Users/jlrus/audiobooks_work/processed/M. Tress - Confident Stride.m4b
+2026-06-16 13:15:21 [INFO] Archived original to /mnt/c/Users/jlrus/audiobooks_work/converted/Confident Stride_ Steelforged Legacy, Book 2.m4b
+2026-06-16 13:15:21 [INFO] Conversion and archive successful for /mnt/c/Users/jlrus/audiobooks_work/staging/Confident Stride_ Steelforged Legacy, Book 2.m4b
+2026-06-16 13:15:21 [INFO] Progress: 3/3 processed; 0 remaining; 3 converted; 0 skipped; 0 failed
+2026-06-16 13:15:21 [INFO] Finished audiobook conversion
+2026-06-16 13:15:21 [INFO] Summary: Processing Complete; Books Found: 3; Books Processed: 3; Remaining: 0; Converted: 3; Single-File Books Processed: 3; Folder Books Processed: 0; Single Files Converted: 3; Folder Books Converted: 0; Folder Books Skipped: 0; Folder Books Failed: 0; Skipped: 0; Failed: 0; Elapsed Time: 00:10:27
+2026-06-16 13:15:21 [INFO] Creating run history CSV: /home/jlrus/projects/alchemist/audiobook_converter_runs.csv
+2026-06-16 13:15:21 [INFO] Run history totals: converted=3, single_files_processed=3, folder_books_processed=0, single_files_converted=3, folder_books_converted=0, folder_books_skipped=0, folder_books_failed=0, original_bytes=2069709188, converted_bytes=1065426258, diff_bytes=1004282930, pct_diff=48.52, runtime=00:10:27
+2026-06-16 13:15:21 [INFO] Appended run history CSV row to /home/jlrus/projects/alchemist/audiobook_converter_runs.csv
+2026-06-16 13:15:21 [INFO] Shutdown complete
+2026-06-16 13:21:47 [INFO] Startup complete; configuration loaded from /home/jlrus/projects/alchemist/audiobook_converter.ini
+2026-06-16 13:21:47 [INFO] Keyboard controls enabled: q=quit, p=pause, Ctrl+C=graceful quit
+2026-06-16 13:21:47 [INFO] Using configured codec: libfdk_aac
+2026-06-16 13:21:47 [INFO] Starting audiobook conversion; dry_run=False
+2026-06-16 13:21:47 [INFO] Discovering direct children under /mnt/c/Users/jlrus/audiobooks_work/staging
+2026-06-16 13:21:47 [INFO] Discovered 2 books to process
+2026-06-16 13:21:47 [INFO] Discovered file: /mnt/c/Users/jlrus/audiobooks_work/staging/Contracts.m4b
+2026-06-16 13:21:47 [INFO] Probe result for /mnt/c/Users/jlrus/audiobooks_work/staging/Contracts.m4b: raw_bitrate=126 kbps, normalized_bitrate=128 kbps, channels=2, codec=aac, duration=36062.58, chapters=95
+2026-06-16 13:21:47 [INFO] Audiobook-relevant source metadata used for /mnt/c/Users/jlrus/audiobooks_work/staging/Contracts.m4b: {'narrator': 'Kevin Kenerly', 'title': 'Contracts', 'subtitle': 'The King & Slater Series, Book 2', 'album': 'Contracts', 'artist': 'Matt Rogers', 'albumartist': 'Matt Rogers', 'series': 'The King & Slater Series', 'series-part': '2', 'genre': 'Literature & Fiction / Action & Adventure / Mystery, Thriller & Suspense / Thriller & Suspense', 'date': '2021', 'description': 'Two trained killers at a staggering altitude.... Raya Parker, the 14-year-old daughter of a senior US black-ops official, has vanished along the trail to Everest. Also unaccounted for are one of the loyal bodyguards assigned to protect her and an unassuming Nepali porter. After a prolonged wait for their first contracted assignment, Jason King and Will Slater touch down in Nepal. They’re not exactly thrilled by the task - they assume it’s a routine opportunistic kidnapping. But Raya’s father, Aidan, has done brilliant work for his country, and if his family is at risk, he deserves the best. Then their grip on the situation spirals violently out of control. Soon enough they’re deep in the throes of terror, battling savage hostiles and the brutality of the terrain itself, and they can’t figure out who the hell is behind any of it. As they ascend higher and higher on the long trail to Gokyo Ri, their energy saps, their bodies crumble, and panic intensifies.... What use is elite combat training when you can hardly breathe?', 'comment': 'Two trained killers at a staggering altitude.... Raya Parker, the 14-year-old daughter of a senior US black-ops official, has vanished along the trail to Everest. Also unaccounted for are one of the loyal bodyguards assigned to protect her and an unassuming Nepali porter. After a prolonged wait for their first contracted assignment, Jason King and Will Slater touch down in Nepal. They’re not exactly thrilled by the task - they assume it’s a routine opportunistic kidnapping. But Raya’s father, Aidan, has done brilliant work for his country, and if his family is at risk, he deserves the best. Then their grip on the situation spirals violently out of control. Soon enough they’re deep in the throes of terror, battling savage hostiles and the brutality of the terrain itself, and they can’t figure out who the hell is behind any of it. As they ascend higher and higher on the long trail to Gokyo Ri, their energy saps, their bodies crumble, and panic intensifies.... What use is elite combat training when you can hardly breathe?', 'language': 'english', 'asin': '1774246902', 'isbn': '9781774246900', 'author': 'Matt Rogers'}
+2026-06-16 13:21:47 [INFO] Single-file Mutagen metadata for /mnt/c/Users/jlrus/audiobooks_work/staging/Contracts.m4b: author='Matt Rogers' inferred=False; album='Contracts' inferred=False; asin='1774246902'; target_bitrate_source=automatic; target_channels_source=automatic; dramatic_audio_status=automatic detection
+2026-06-16 13:21:47 [INFO] Dramatic audio not detected for /mnt/c/Users/jlrus/audiobooks_work/staging/Contracts.m4b
+2026-06-16 13:21:47 [INFO] Conversion decision for /mnt/c/Users/jlrus/audiobooks_work/staging/Contracts.m4b: raw=126 kbps, normalized=128 kbps, source_channels=2, output_channels=1, target=64 kbps
+2026-06-16 13:21:47 [INFO] Cover extraction disabled by configuration
+2026-06-16 13:21:47 [INFO] Converting /mnt/c/Users/jlrus/audiobooks_work/staging/Contracts.m4b to temporary output /mnt/c/Users/jlrus/audiobooks_work/processed/Matt Rogers - Contracts.tmp.m4b
+2026-06-16 13:21:55 [WARNING] Graceful quit requested by keyboard
+2026-06-16 13:21:56 [CRITICAL] Forced termination requested by keyboard after graceful quit was already pending
+2026-06-16 13:21:56 [ERROR] FFmpeg failed for /mnt/c/Users/jlrus/audiobooks_work/staging/Contracts.m4b: [in#0 @ 0xb9dc0c64c890] stream 0, timescale not set
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from '/mnt/c/Users/jlrus/audiobooks_work/staging/Contracts.m4b':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 512
+    compatible_brands: iso2mp41M4A M4B 
+    creation_time   : 2021-01-04T16:40:43.000000Z
+    title           : Contracts
+    artist          : Matt Rogers
+    composer        : Kevin Kenerly
+    track           : 1/1
+    RATING WMP      : 4.6
+    gapless_playback: 1
+    media_type      : 2
+    description     : Two trained killers at a staggering altitude.... Raya Parker, the 14-year-old daughter of a senior US black-ops official, has vanished along the trail to Everest. Also unaccounted for are one of the loyal bodyguards assigned to protect her and an unassumi
+    WWWAUDIOFILE    : https://www.audible.com/pd/1774246902
+    SUBTITLE        : The King & Slater Series, Book 2
+    SERIESPART      : 2
+    SERIES_PART     : 2
+    SERIES-PART     : 2
+    SERIES          : The King & Slater Series
+    RELEASETIME     : 2021-01-19
+    RELEASEDATE     : 2021-01-19
+    RATING          : 4.6
+    MOVEMENTNUMBER  : 2
+    LANGUAGE        : english
+    ISBN            : 9781774246900
+    copyright       : ©2021 Matt Rogers (P)2021 Podium Audio
+    GENRE           : Mystery, Thriller & Suspense / Thriller & Suspense / Suspense
+    FORMAT          : unabridged
+    EXPLICIT        : 0
+    DATE            : 2021-01-19
+    grouping        : The King & Slater Series
+    comment         : Two trained killers at a staggering altitude.... Raya Parker, the 14-year-old daughter of a senior US black-ops official, has vanished along the trail to Everest. Also unaccounted for are one of the loyal bodyguards assigned to protect her and an unassumi
+    AUDIBLE_ASIN    : 1774246902
+    ASIN            : 1774246902
+    sort_album      : The King & Slater Series 2 - Contracts
+    album_artist    : Matt Rogers
+    album           : Contracts
+  Duration: 10:01:02.58, start: 0.000000, bitrate: 127 kb/s
+  Chapters:
+    Chapter #0:0: start 0.000000, end 19.224989
+      Metadata:
+        title           : Chapter 1
+    Chapter #0:1: start 19.224989, end 331.787982
+      Metadata:
+        title           : Chapter 2
+    Chapter #0:2: start 331.787982, end 701.843968
+      Metadata:
+        title           : Chapter 3
+    Chapter #0:3: start 701.843968, end 1150.847959
+      Metadata:
+        title           : Chapter 4
+    Chapter #0:4: start 1150.847959, end 1584.131950
+      Metadata:
+        title           : Chapter 5
+    Chapter #0:5: start 1584.131950, end 1939.233946
+      Metadata:
+        title           : Chapter 6
+    Chapter #0:6: start 1939.233946, end 2371.983946
+      Metadata:
+        title           : Chapter 7
+    Chapter #0:7: start 2371.983946, end 2621.574943
+      Metadata:
+        title           : Chapter 8
+    Chapter #0:8: start 2621.574943, end 3098.836939
+      Metadata:
+        title           : Chapter 9
+    Chapter #0:9: start 3098.836939, end 3655.464921
+      Metadata:
+        title           : Chapter 10
+    Chapter #0:10: start 3655.464921, end 3882.833900
+      Metadata:
+        title           : Chapter 11
+    Chapter #0:11: start 3882.833900, end 4247.246893
+      Metadata:
+        title           : Chapter 12
+    Chapter #0:12: start 4247.246893, end 4862.853878
+      Metadata:
+        title           : Chapter 13
+    Chapter #0:13: start 4862.853878, end 5138.497868
+      Metadata:
+        title           : Chapter 14
+    Chapter #0:14: start 5138.497868, end 5481.060862
+      Metadata:
+        title           : Chapter 15
+    Chapter #0:15: start 5481.060862, end 5710.775850
+      Metadata:
+        title           : Chapter 16
+    Chapter #0:16: start 5710.775850, end 6092.534830
+      Metadata:
+        title           : Chapter 17
+    Chapter #0:17: start 6092.534830, end 6527.141814
+      Metadata:
+        title           : Chapter 18
+    Chapter #0:18: start 6527.141814, end 6944.751814
+      Metadata:
+        title           : Chapter 19
+    Chapter #0:19: start 6944.751814, end 7523.949796
+      Metadata:
+        title           : Chapter 20
+    Chapter #0:20: start 7523.949796, end 7901.714785
+      Metadata:
+        title           : Chapter 21
+    Chapter #0:21: start 7901.714785, end 8382.320771
+      Metadata:
+        title           : Chapter 22
+    Chapter #0:22: start 8382.320771, end 8727.043764
+      Metadata:
+        title           : Chapter 23
+    Chapter #0:23: start 8727.043764, end 9067.563764
+      Metadata:
+        title           : Chapter 24
+    Chapter #0:24: start 9067.563764, end 9322.285760
+      Metadata:
+        title           : Chapter 25
+    Chapter #0:25: start 9322.285760, end 9763.417755
+      Metadata:
+        title           : Chapter 26
+    Chapter #0:26: start 9763.417755, end 10106.979751
+      Metadata:
+        title           : Chapter 27
+    Chapter #0:27: start 10106.979751, end 10428.041746
+      Metadata:
+        title           : Chapter 28
+    Chapter #0:28: start 10428.041746, end 10859.676735
+      Metadata:
+        title           : Chapter 29
+    Chapter #0:29: start 10859.676735, end 11215.150726
+      Metadata:
+        title           : Chapter 30
+    Chapter #0:30: start 11215.150726, end 11613.627710
+      Metadata:
+        title           : Chapter 31
+    Chapter #0:31: start 11613.627710, end 11923.334694
+      Metadata:
+        title           : Chapter 32
+    Chapter #0:32: start 11923.334694, end 12127.437687
+      Metadata:
+        title           : Chapter 33
+    Chapter #0:33: start 12127.437687, end 12512.841678
+      Metadata:
+        title           : Chapter 34
+    Chapter #0:34: start 12512.841678, end 13008.029660
+      Metadata:
+        title           : Chapter 35
+    Chapter #0:35: start 13008.029660, end 13472.149660
+      Metadata:
+        title           : Chapter 36
+    Chapter #0:36: start 13472.149660, end 13826.369660
+      Metadata:
+        title           : Chapter 37
+    Chapter #0:37: start 13826.369660, end 14110.767642
+      Metadata:
+        title           : Chapter 38
+    Chapter #0:38: start 14110.767642, end 14467.077642
+      Metadata:
+        title           : Chapter 39
+    Chapter #0:39: start 14467.077642, end 14873.611633
+      Metadata:
+        title           : Chapter 40
+    Chapter #0:40: start 14873.611633, end 15373.397619
+      Metadata:
+        title           : Chapter 41
+    Chapter #0:41: start 15373.397619, end 15886.674603
+      Metadata:
+        title           : Chapter 42
+    Chapter #0:42: start 15886.674603, end 16304.447596
+      Metadata:
+        title           : Chapter 43
+    Chapter #0:43: start 16304.447596, end 16626.298594
+      Metadata:
+        title           : Chapter 44
+    Chapter #0:44: start 16626.298594, end 16940.998594
+      Metadata:
+        title           : Chapter 45
+    Chapter #0:45: start 16940.998594, end 17422.904580
+      Metadata:
+        title           : Chapter 46
+    Chapter #0:46: start 17422.904580, end 17816.853560
+      Metadata:
+        title           : Chapter 47
+    Chapter #0:47: start 17816.853560, end 18187.118549
+      Metadata:
+        title           : Chapter 48
+    Chapter #0:48: start 18187.118549, end 18610.440544
+      Metadata:
+        title           : Chapter 49
+    Chapter #0:49: start 18610.440544, end 18853.808526
+      Metadata:
+        title           : Chapter 50
+    Chapter #0:50: start 18853.808526, end 19263.500522
+      Metadata:
+        title           : Chapter 51
+    Chapter #0:51: start 19263.500522, end 19709.416508
+      Metadata:
+        title           : Chapter 52
+    Chapter #0:52: start 19709.416508, end 20142.119501
+      Metadata:
+        title           : Chapter 53
+    Chapter #0:53: start 20142.119501, end 20245.935488
+      Metadata:
+        title           : Chapter 54
+    Chapter #0:54: start 20245.935488, end 20396.168481
+      Metadata:
+        title           : Chapter 55
+    Chapter #0:55: start 20396.168481, end 20785.938481
+      Metadata:
+        title           : Chapter 56
+    Chapter #0:56: start 20785.938481, end 21227.744467
+      Metadata:
+        title           : Chapter 57
+    Chapter #0:57: start 21227.744467, end 21591.438458
+      Metadata:
+        title           : Chapter 58
+    Chapter #0:58: start 21591.438458, end 21946.169456
+      Metadata:
+        title           : Chapter 59
+    Chapter #0:59: start 21946.169456, end 22106.781451
+      Metadata:
+        title           : Chapter 60
+    Chapter #0:60: start 22106.781451, end 22562.565442
+      Metadata:
+        title           : Chapter 61
+    Chapter #0:61: start 22562.565442, end 22871.622426
+      Metadata:
+        title           : Chapter 62
+    Chapter #0:62: start 22871.622426, end 23252.127415
+      Metadata:
+        title           : Chapter 63
+    Chapter #0:63: start 23252.127415, end 23693.282404
+      Metadata:
+        title           : Chapter 64
+    Chapter #0:64: start 23693.282404, end 24287.387392
+      Metadata:
+        title           : Chapter 65
+    Chapter #0:65: start 24287.387392, end 24675.903379
+      Metadata:
+        title           : Chapter 66
+    Chapter #0:66: start 24675.903379, end 25058.149365
+      Metadata:
+        title           : Chapter 67
+    Chapter #0:67: start 25058.149365, end 25473.902358
+      Metadata:
+        title           : Chapter 68
+    Chapter #0:68: start 25473.902358, end 25910.947347
+      Metadata:
+        title           : Chapter 69
+    Chapter #0:69: start 25910.947347, end 26339.982336
+      Metadata:
+        title           : Chapter 70
+    Chapter #0:70: start 26339.982336, end 26652.336327
+      Metadata:
+        title           : Chapter 71
+    Chapter #0:71: start 26652.336327, end 27393.656327
+      Metadata:
+        title           : Chapter 72
+    Chapter #0:72: start 27393.656327, end 27754.354308
+      Metadata:
+        title           : Chapter 73
+    Chapter #0:73: start 27754.354308, end 28284.906304
+      Metadata:
+        title           : Chapter 74
+    Chapter #0:74: start 28284.906304, end 28695.574286
+      Metadata:
+        title           : Chapter 75
+    Chapter #0:75: start 28695.574286, end 29037.720272
+      Metadata:
+        title           : Chapter 76
+    Chapter #0:76: start 29037.720272, end 29457.652268
+      Metadata:
+        title           : Chapter 77
+    Chapter #0:77: start 29457.652268, end 29702.251247
+      Metadata:
+        title           : Chapter 78
+    Chapter #0:78: start 29702.251247, end 30167.184240
+      Metadata:
+        title           : Chapter 79
+    Chapter #0:79: start 30167.184240, end 30624.524240
+      Metadata:
+        title           : Chapter 80
+    Chapter #0:80: start 30624.524240, end 31041.624240
+      Metadata:
+        title           : Chapter 81
+    Chapter #0:81: start 31041.624240, end 31488.886236
+      Metadata:
+        title           : Chapter 82
+    Chapter #0:82: start 31488.886236, end 31896.210227
+      Metadata:
+        title           : Chapter 83
+    Chapter #0:83: start 31896.210227, end 32225.213220
+      Metadata:
+        title           : Chapter 84
+    Chapter #0:84: start 32225.213220, end 32664.557211
+      Metadata:
+        title           : Chapter 85
+    Chapter #0:85: start 32664.557211, end 33062.709206
+      Metadata:
+        title           : Chapter 86
+    Chapter #0:86: start 33062.709206, end 33412.029206
+      Metadata:
+        title           : Chapter 87
+    Chapter #0:87: start 33412.029206, end 33867.697188
+      Metadata:
+        title           : Chapter 88
+    Chapter #0:88: start 33867.697188, end 34281.151179
+      Metadata:
+        title           : Chapter 89
+    Chapter #0:89: start 34281.151179, end 34557.236168
+      Metadata:
+        title           : Chapter 90
+    Chapter #0:90: start 34557.236168, end 35039.026168
+      Metadata:
+        title           : Chapter 91
+    Chapter #0:91: start 35039.026168, end 35419.949161
+      Metadata:
+        title           : Chapter 92
+    Chapter #0:92: start 35419.949161, end 35614.601156
+      Metadata:
+        title           : Chapter 93
+    Chapter #0:93: start 35614.601156, end 36003.976145
+      Metadata:
+        title           : Chapter 94
+    Chapter #0:94: start 36003.976145, end 36062.578345
+      Metadata:
+        title           : Chapter 95
+  Stream #0:0[0x1](eng): Audio: aac (LC) (mp4a / 0x6134706D), 44100 Hz, stereo, fltp, 125 kb/s (default)
+    Metadata:
+      creation_time   : 2021-01-04T16:40:43.000000Z
+      handler_name    : ?Apple Sound Media Handler
+  Stream #0:1[0x2](eng): Data: bin_data (text / 0x74786574) (default)
+    Metadata:
+      creation_time   : 2021-01-04T16:40:43.000000Z
+      handler_name    : ?Apple Text Media Handler
+  Stream #0:2[0x0]: Video: mjpeg (Progressive), yuvj420p(pc, bt470bg/unknown/unknown), 1000x1000 [SAR 1:1 DAR 1:1], 90k tbr, 90k tbn (attached pic)
+Stream mapping:
+  Stream #0:0 -> #0:0 (aac (native) -> aac (libfdk_aac))
+Press [q] to stop, [?] for help
+Output #0, mp4, to '/mnt/c/Users/jlrus/audiobooks_work/processed/Matt Rogers - Contracts.tmp.m4b':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 512
+    compatible_brands: iso2mp41M4A M4B 
+    creation_time   : 2021-01-04T16:40:43.000000Z
+    title           : Contracts
+    artist          : Matt Rogers
+    composer        : Kevin Kenerly
+    track           : 1/1
+    RATING WMP      : 4.6
+    gapless_playback: 1
+    media_type      : 2
+    description     : Two trained killers at a staggering altitude.... Raya Parker, the 14-year-old daughter of a senior US black-ops official, has vanished along the trail to Everest. Also unaccounted for are one of the loyal bodyguards assigned to protect her and an unassumi
+    WWWAUDIOFILE    : https://www.audible.com/pd/1774246902
+    SUBTITLE        : The King & Slater Series, Book 2
+    SERIESPART      : 2
+    SERIES_PART     : 2
+    SERIES-PART     : 2
+    SERIES          : The King & Slater Series
+    RELEASETIME     : 2021-01-19
+    RELEASEDATE     : 2021-01-19
+    RATING          : 4.6
+    MOVEMENTNUMBER  : 2
+    LANGUAGE        : english
+    ISBN            : 9781774246900
+    copyright       : ©2021 Matt Rogers (P)2021 Podium Audio
+    GENRE           : Mystery, Thriller & Suspense / Thriller & Suspense / Suspense
+    FORMAT          : unabridged
+    EXPLICIT        : 0
+    DATE            : 2021-01-19
+    grouping        : The King & Slater Series
+    comment         : Two trained killers at a staggering altitude.... Raya Parker, the 14-year-old daughter of a senior US black-ops official, has vanished along the trail to Everest. Also unaccounted for are one of the loyal bodyguards assigned to protect her and an unassumi
+    AUDIBLE_ASIN    : 1774246902
+    ASIN            : 1774246902
+    sort_album      : The King & Slater Series 2 - Contracts
+    album_artist    : Matt Rogers
+    album           : Contracts
+    encoder         : Lavf62.19.100
+  Chapters:
+    Chapter #0:0: start 0.000000, end 19.224989
+      Metadata:
+        title           : Chapter 1
+    Chapter #0:1: start 19.224989, end 331.787982
+      Metadata:
+        title           : Chapter 2
+    Chapter #0:2: start 331.787982, end 701.843968
+      Metadata:
+        title           : Chapter 3
+    Chapter #0:3: start 701.843968, end 1150.847959
+      Metadata:
+        title           : Chapter 4
+    Chapter #0:4: start 1150.847959, end 1584.131950
+      Metadata:
+        title           : Chapter 5
+    Chapter #0:5: start 1584.131950, end 1939.233946
+      Metadata:
+        title           : Chapter 6
+    Chapter #0:6: start 1939.233946, end 2371.983946
+      Metadata:
+        title           : Chapter 7
+    Chapter #0:7: start 2371.983946, end 2621.574943
+      Metadata:
+        title           : Chapter 8
+    Chapter #0:8: start 2621.574943, end 3098.836939
+      Metadata:
+        title           : Chapter 9
+    Chapter #0:9: start 3098.836939, end 3655.464921
+      Metadata:
+        title           : Chapter 10
+    Chapter #0:10: start 3655.464921, end 3882.833900
+      Metadata:
+        title           : Chapter 11
+    Chapter #0:11: start 3882.833900, end 4247.246893
+      Metadata:
+        title           : Chapter 12
+    Chapter #0:12: start 4247.246893, end 4862.853878
+      Metadata:
+        title           : Chapter 13
+    Chapter #0:13: start 4862.853878, end 5138.497868
+      Metadata:
+        title           : Chapter 14
+    Chapter #0:14: start 5138.497868, end 5481.060862
+      Metadata:
+        title           : Chapter 15
+    Chapter #0:15: start 5481.060862, end 5710.775850
+      Metadata:
+        title           : Chapter 16
+    Chapter #0:16: start 5710.775850, end 6092.534830
+      Metadata:
+        title           : Chapter 17
+    Chapter #0:17: start 6092.534830, end 6527.141814
+      Metadata:
+        title           : Chapter 18
+    Chapter #0:18: start 6527.141814, end 6944.751814
+      Metadata:
+        title           : Chapter 19
+    Chapter #0:19: start 6944.751814, end 7523.949796
+      Metadata:
+        title           : Chapter 20
+    Chapter #0:20: start 7523.949796, end 7901.714785
+      Metadata:
+        title           : Chapter 21
+    Chapter #0:21: start 7901.714785, end 8382.320771
+      Metadata:
+        title           : Chapter 22
+    Chapter #0:22: start 8382.320771, end 8727.043764
+      Metadata:
+        title           : Chapter 23
+    Chapter #0:23: start 8727.043764, end 9067.563764
+      Metadata:
+        title           : Chapter 24
+    Chapter #0:24: start 9067.563764, end 9322.285760
+      Metadata:
+        title           : Chapter 25
+    Chapter #0:25: start 9322.285760, end 9763.417755
+      Metadata:
+        title           : Chapter 26
+    Chapter #0:26: start 9763.417755, end 10106.979751
+      Metadata:
+        title           : Chapter 27
+    Chapter #0:27: start 10106.979751, end 10428.041746
+      Metadata:
+        title           : Chapter 28
+    Chapter #0:28: start 10428.041746, end 10859.676735
+      Metadata:
+        title           : Chapter 29
+    Chapter #0:29: start 10859.676735, end 11215.150726
+      Metadata:
+        title           : Chapter 30
+    Chapter #0:30: start 11215.150726, end 11613.627710
+      Metadata:
+        title           : Chapter 31
+    Chapter #0:31: start 11613.627710, end 11923.334694
+      Metadata:
+        title           : Chapter 32
+    Chapter #0:32: start 11923.334694, end 12127.437687
+      Metadata:
+        title           : Chapter 33
+    Chapter #0:33: start 12127.437687, end 12512.841678
+      Metadata:
+        title           : Chapter 34
+    Chapter #0:34: start 12512.841678, end 13008.029660
+      Metadata:
+        title           : Chapter 35
+    Chapter #0:35: start 13008.029660, end 13472.149660
+      Metadata:
+        title           : Chapter 36
+    Chapter #0:36: start 13472.149660, end 13826.369660
+      Metadata:
+        title           : Chapter 37
+    Chapter #0:37: start 13826.369660, end 14110.767642
+      Metadata:
+        title           : Chapter 38
+    Chapter #0:38: start 14110.767642, end 14467.077642
+      Metadata:
+        title           : Chapter 39
+    Chapter #0:39: start 14467.077642, end 14873.611633
+      Metadata:
+        title           : Chapter 40
+    Chapter #0:40: start 14873.611633, end 15373.397619
+      Metadata:
+        title           : Chapter 41
+    Chapter #0:41: start 15373.397619, end 15886.674603
+      Metadata:
+        title           : Chapter 42
+    Chapter #0:42: start 15886.674603, end 16304.447596
+      Metadata:
+        title           : Chapter 43
+    Chapter #0:43: start 16304.447596, end 16626.298594
+      Metadata:
+        title           : Chapter 44
+    Chapter #0:44: start 16626.298594, end 16940.998594
+      Metadata:
+        title           : Chapter 45
+    Chapter #0:45: start 16940.998594, end 17422.904580
+      Metadata:
+        title           : Chapter 46
+    Chapter #0:46: start 17422.904580, end 17816.853560
+      Metadata:
+        title           : Chapter 47
+    Chapter #0:47: start 17816.853560, end 18187.118549
+      Metadata:
+        title           : Chapter 48
+    Chapter #0:48: start 18187.118549, end 18610.440544
+      Metadata:
+        title           : Chapter 49
+    Chapter #0:49: start 18610.440544, end 18853.808526
+      Metadata:
+        title           : Chapter 50
+    Chapter #0:50: start 18853.808526, end 19263.500522
+      Metadata:
+        title           : Chapter 51
+    Chapter #0:51: start 19263.500522, end 19709.416508
+      Metadata:
+        title           : Chapter 52
+    Chapter #0:52: start 19709.416508, end 20142.119501
+      Metadata:
+        title           : Chapter 53
+    Chapter #0:53: start 20142.119501, end 20245.935488
+      Metadata:
+        title           : Chapter 54
+    Chapter #0:54: start 20245.935488, end 20396.168481
+      Metadata:
+        title           : Chapter 55
+    Chapter #0:55: start 20396.168481, end 20785.938481
+      Metadata:
+        title           : Chapter 56
+    Chapter #0:56: start 20785.938481, end 21227.744467
+      Metadata:
+        title           : Chapter 57
+    Chapter #0:57: start 21227.744467, end 21591.438458
+      Metadata:
+        title           : Chapter 58
+    Chapter #0:58: start 21591.438458, end 21946.169456
+      Metadata:
+        title           : Chapter 59
+    Chapter #0:59: start 21946.169456, end 22106.781451
+      Metadata:
+        title           : Chapter 60
+    Chapter #0:60: start 22106.781451, end 22562.565442
+      Metadata:
+        title           : Chapter 61
+    Chapter #0:61: start 22562.565442, end 22871.622426
+      Metadata:
+        title           : Chapter 62
+    Chapter #0:62: start 22871.622426, end 23252.127415
+      Metadata:
+        title           : Chapter 63
+    Chapter #0:63: start 23252.127415, end 23693.282404
+      Metadata:
+        title           : Chapter 64
+    Chapter #0:64: start 23693.282404, end 24287.387392
+      Metadata:
+        title           : Chapter 65
+    Chapter #0:65: start 24287.387392, end 24675.903379
+      Metadata:
+        title           : Chapter 66
+    Chapter #0:66: start 24675.903379, end 25058.149365
+      Metadata:
+        title           : Chapter 67
+    Chapter #0:67: start 25058.149365, end 25473.902358
+      Metadata:
+        title           : Chapter 68
+    Chapter #0:68: start 25473.902358, end 25910.947347
+      Metadata:
+        title           : Chapter 69
+    Chapter #0:69: start 25910.947347, end 26339.982336
+      Metadata:
+        title           : Chapter 70
+    Chapter #0:70: start 26339.982336, end 26652.336327
+      Metadata:
+        title           : Chapter 71
+    Chapter #0:71: start 26652.336327, end 27393.656327
+      Metadata:
+        title           : Chapter 72
+    Chapter #0:72: start 27393.656327, end 27754.354308
+      Metadata:
+        title           : Chapter 73
+    Chapter #0:73: start 27754.354308, end 28284.906304
+      Metadata:
+        title           : Chapter 74
+    Chapter #0:74: start 28284.906304, end 28695.574286
+      Metadata:
+        title           : Chapter 75
+    Chapter #0:75: start 28695.574286, end 29037.720272
+      Metadata:
+        title           : Chapter 76
+    Chapter #0:76: start 29037.720272, end 29457.652268
+      Metadata:
+        title           : Chapter 77
+    Chapter #0:77: start 29457.652268, end 29702.251247
+      Metadata:
+        title           : Chapter 78
+    Chapter #0:78: start 29702.251247, end 30167.184240
+      Metadata:
+        title           : Chapter 79
+    Chapter #0:79: start 30167.184240, end 30624.524240
+      Metadata:
+        title           : Chapter 80
+    Chapter #0:80: start 30624.524240, end 31041.624240
+      Metadata:
+        title           : Chapter 81
+    Chapter #0:81: start 31041.624240, end 31488.886236
+      Metadata:
+        title           : Chapter 82
+    Chapter #0:82: start 31488.886236, end 31896.210227
+      Metadata:
+        title           : Chapter 83
+    Chapter #0:83: start 31896.210227, end 32225.213220
+      Metadata:
+        title           : Chapter 84
+    Chapter #0:84: start 32225.213220, end 32664.557211
+      Metadata:
+        title           : Chapter 85
+    Chapter #0:85: start 32664.557211, end 33062.709206
+      Metadata:
+        title           : Chapter 86
+    Chapter #0:86: start 33062.709206, end 33412.029206
+      Metadata:
+        title           : Chapter 87
+    Chapter #0:87: start 33412.029206, end 33867.697188
+      Metadata:
+        title           : Chapter 88
+    Chapter #0:88: start 33867.697188, end 34281.151179
+      Metadata:
+        title           : Chapter 89
+    Chapter #0:89: start 34281.151179, end 34557.236168
+      Metadata:
+        title           : Chapter 90
+    Chapter #0:90: start 34557.236168, end 35039.026168
+      Metadata:
+        title           : Chapter 91
+    Chapter #0:91: start 35039.026168, end 35419.949161
+      Metadata:
+        title           : Chapter 92
+    Chapter #0:92: start 35419.949161, end 35614.601156
+      Metadata:
+        title           : Chapter 93
+    Chapter #0:93: start 35614.601156, end 36003.976145
+      Metadata:
+        title           : Chapter 94
+    Chapter #0:94: start 36003.976145, end 36062.578345
+      Metadata:
+        title           : Chapter 95
+  Stream #0:0(eng): Audio: aac (mp4a / 0x6134706D), 44100 Hz, mono, s16, 64 kb/s (default)
+    Metadata:
+      encoder         : Lavc62.36.100 libfdk_aac
+      creation_time   : 2021-01-04T16:40:43.000000Z
+      handler_name    : ?Apple Sound Media Handler
+    Side data:
+      CPB properties: bitrate max/min/avg: 64000/64000/64000 buffer size: 0 vbv_delay: N/A
+size=     770KiB time=00:01:41.81 bitrate=  62.0kbits/s speed= 203x elapsed=0:00:00.50    size=    1538KiB time=00:03:28.30 bitrate=  60.5kbits/s speed= 207x elapsed=0:00:01.00    size=    2306KiB time=00:05:16.78 bitrate=  59.6kbits/s speed= 210x elapsed=0:00:01.50    size=    3330KiB time=00:07:06.89 bitrate=  63.9kbits/s speed= 213x elapsed=0:00:02.00    size=    4098KiB time=00:08:59.44 bitrate=  62.2kbits/s speed= 215x elapsed=0:00:02.51    size=    5122KiB time=00:10:56.03 bitrate=  64.0kbits/s speed= 218x elapsed=0:00:03.01    size=    5890KiB time=00:12:52.82 bitrate=  62.4kbits/s speed= 220x elapsed=0:00:03.51    size=    6914KiB time=00:14:47.58 bitrate=  63.8kbits/s speed= 221x elapsed=0:00:04.01    size=    7682KiB time=00:16:44.56 bitrate=  62.6kbits/s speed= 223x elapsed=0:00:04.51    size=    8706KiB time=00:18:41.17 bitrate=  63.6kbits/s speed= 224x elapsed=0:00:05.01    size=    9474KiB time=00:20:38.29 bitrate=  62.7kbits/s speed= 225x elapsed=0:00:05.51    size=   10498KiB time=00:22:34.16 bitrate=  63.5kbits/s speed= 225x elapsed=0:00:06.01    size=   11266KiB time=00:24:30.63 bitrate=  62.8kbits/s speed= 226x elapsed=0:00:06.51    size=   12290KiB time=00:26:30.91 bitrate=  63.3kbits/s speed= 227x elapsed=0:00:07.01    size=   13314KiB time=00:28:30.68 bitrate=  63.8kbits/s speed= 228x elapsed=0:00:07.51    size=   14082KiB time=00:30:30.73 bitrate=  63.0kbits/s speed= 229x elapsed=0:00:08.01    size=   15106KiB time=00:32:30.87 bitrate=  63.4kbits/s speed= 229x elapsed=0:00:08.51    [out#0/mp4 @ 0xb9dc0c6547c0] video:0KiB audio:16176KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: 2.209865%
+size=   16533KiB time=00:34:30.43 bitrate=  65.4kbits/s speed= 230x elapsed=0:00:09.02    
+Exiting normally, received signal 15.
+2026-06-16 13:26:49 [INFO] Startup complete; configuration loaded from /home/jlrus/projects/alchemist/audiobook_converter.ini
+2026-06-16 13:26:49 [INFO] Keyboard controls enabled: q=quit, p=pause, Ctrl+C=graceful quit
+2026-06-16 13:26:49 [INFO] Using configured codec: libfdk_aac
+2026-06-16 13:26:49 [INFO] Starting audiobook conversion; dry_run=False
+2026-06-16 13:26:49 [INFO] Discovering direct children under /mnt/c/Users/jlrus/audiobooks_work/staging
+2026-06-16 13:26:49 [INFO] Discovered 2 books to process
+2026-06-16 13:26:49 [INFO] Discovered file: /mnt/c/Users/jlrus/audiobooks_work/staging/Contracts.m4b
+2026-06-16 13:26:49 [INFO] Probe result for /mnt/c/Users/jlrus/audiobooks_work/staging/Contracts.m4b: raw_bitrate=126 kbps, normalized_bitrate=128 kbps, channels=2, codec=aac, duration=36062.58, chapters=95
+2026-06-16 13:26:49 [INFO] Audiobook-relevant source metadata used for /mnt/c/Users/jlrus/audiobooks_work/staging/Contracts.m4b: {'narrator': 'Kevin Kenerly', 'title': 'Contracts', 'subtitle': 'The King & Slater Series, Book 2', 'album': 'Contracts', 'artist': 'Matt Rogers', 'albumartist': 'Matt Rogers', 'series': 'The King & Slater Series', 'series-part': '2', 'genre': 'Literature & Fiction / Action & Adventure / Mystery, Thriller & Suspense / Thriller & Suspense', 'date': '2021', 'description': 'Two trained killers at a staggering altitude.... Raya Parker, the 14-year-old daughter of a senior US black-ops official, has vanished along the trail to Everest. Also unaccounted for are one of the loyal bodyguards assigned to protect her and an unassuming Nepali porter. After a prolonged wait for their first contracted assignment, Jason King and Will Slater touch down in Nepal. They’re not exactly thrilled by the task - they assume it’s a routine opportunistic kidnapping. But Raya’s father, Aidan, has done brilliant work for his country, and if his family is at risk, he deserves the best. Then their grip on the situation spirals violently out of control. Soon enough they’re deep in the throes of terror, battling savage hostiles and the brutality of the terrain itself, and they can’t figure out who the hell is behind any of it. As they ascend higher and higher on the long trail to Gokyo Ri, their energy saps, their bodies crumble, and panic intensifies.... What use is elite combat training when you can hardly breathe?', 'comment': 'Two trained killers at a staggering altitude.... Raya Parker, the 14-year-old daughter of a senior US black-ops official, has vanished along the trail to Everest. Also unaccounted for are one of the loyal bodyguards assigned to protect her and an unassuming Nepali porter. After a prolonged wait for their first contracted assignment, Jason King and Will Slater touch down in Nepal. They’re not exactly thrilled by the task - they assume it’s a routine opportunistic kidnapping. But Raya’s father, Aidan, has done brilliant work for his country, and if his family is at risk, he deserves the best. Then their grip on the situation spirals violently out of control. Soon enough they’re deep in the throes of terror, battling savage hostiles and the brutality of the terrain itself, and they can’t figure out who the hell is behind any of it. As they ascend higher and higher on the long trail to Gokyo Ri, their energy saps, their bodies crumble, and panic intensifies.... What use is elite combat training when you can hardly breathe?', 'language': 'english', 'asin': '1774246902', 'isbn': '9781774246900', 'author': 'Matt Rogers'}
+2026-06-16 13:26:49 [INFO] Single-file Mutagen metadata for /mnt/c/Users/jlrus/audiobooks_work/staging/Contracts.m4b: author='Matt Rogers' inferred=False; album='Contracts' inferred=False; asin='1774246902'; target_bitrate_source=override=64 kbps; target_channels_source=override=1; dramatic_audio_status=explicit false
+2026-06-16 13:26:49 [INFO] Dramatic audio not detected for /mnt/c/Users/jlrus/audiobooks_work/staging/Contracts.m4b
+2026-06-16 13:26:49 [INFO] Conversion decision for /mnt/c/Users/jlrus/audiobooks_work/staging/Contracts.m4b: raw=126 kbps, normalized=128 kbps, source_channels=2, output_channels=1, target=64 kbps
+2026-06-16 13:26:49 [INFO] Cover extraction disabled by configuration
+2026-06-16 13:26:49 [INFO] Converting /mnt/c/Users/jlrus/audiobooks_work/staging/Contracts.m4b to temporary output /mnt/c/Users/jlrus/audiobooks_work/processed/Matt Rogers - Contracts.tmp.m4b
+2026-06-16 13:30:02 [INFO] FFmpeg conversion completed for /mnt/c/Users/jlrus/audiobooks_work/staging/Contracts.m4b
+2026-06-16 13:30:02 [WARNING] Metadata appears missing in output: narrator
+2026-06-16 13:30:02 [WARNING] Metadata appears missing in output: subtitle
+2026-06-16 13:30:02 [WARNING] Metadata appears missing in output: albumartist
+2026-06-16 13:30:02 [WARNING] Metadata appears missing in output: series
+2026-06-16 13:30:02 [WARNING] Metadata appears missing in output: series-part
+2026-06-16 13:30:02 [WARNING] Metadata appears missing in output: asin
+2026-06-16 13:30:02 [WARNING] Metadata appears missing in output: isbn
+2026-06-16 13:30:02 [WARNING] Metadata appears missing in output: author
+2026-06-16 13:30:02 [WARNING] Metadata appears missing in output: dramatic_audio
+2026-06-16 13:30:02 [INFO] Validation successful: /mnt/c/Users/jlrus/audiobooks_work/processed/Matt Rogers - Contracts.tmp.m4b
+2026-06-16 13:30:02 [INFO] Promoted temporary output using os.replace: /mnt/c/Users/jlrus/audiobooks_work/processed/Matt Rogers - Contracts.tmp.m4b -> /mnt/c/Users/jlrus/audiobooks_work/processed/Matt Rogers - Contracts.m4b
+2026-06-16 13:30:02 [INFO] Promoted temporary output to final output: /mnt/c/Users/jlrus/audiobooks_work/processed/Matt Rogers - Contracts.m4b
+2026-06-16 13:30:02 [INFO] Embedded cover art preserved from /mnt/c/Users/jlrus/audiobooks_work/staging/Contracts.m4b to /mnt/c/Users/jlrus/audiobooks_work/processed/Matt Rogers - Contracts.m4b
+2026-06-16 13:30:02 [INFO] Removed existing metadata variant: ©ART
+2026-06-16 13:30:02 [INFO] Removed existing metadata variant: aART
+2026-06-16 13:30:02 [INFO] Mutagen final metadata pass succeeded for /mnt/c/Users/jlrus/audiobooks_work/processed/Matt Rogers - Contracts.m4b
+2026-06-16 13:30:02 [INFO] Archived original to /mnt/c/Users/jlrus/audiobooks_work/converted/Contracts.m4b
+2026-06-16 13:30:02 [INFO] Conversion and archive successful for /mnt/c/Users/jlrus/audiobooks_work/staging/Contracts.m4b
+2026-06-16 13:30:02 [INFO] Progress: 1/2 processed; 1 remaining; 1 converted; 0 skipped; 0 failed
+2026-06-16 13:30:02 [INFO] Terminal settings captured before folder-book processing: book
+2026-06-16 13:30:02 [INFO] Folder-book processing started: book
+2026-06-16 13:30:02 [INFO] Folder-book discovered: /mnt/c/Users/jlrus/audiobooks_work/staging/book
+2026-06-16 13:30:02 [INFO] Audio files discovered for folder-book /mnt/c/Users/jlrus/audiobooks_work/staging/book: 7
+2026-06-16 13:30:02 [INFO] Using metadata from representative audio tags.
+2026-06-16 13:30:02 [INFO] Track number extracted for /mnt/c/Users/jlrus/audiobooks_work/staging/book/Gerald N. Lund - A Generation Rising B0DM3VB9TM..mp3: 1
+2026-06-16 13:30:02 [INFO] Track number extracted for /mnt/c/Users/jlrus/audiobooks_work/staging/book/Part 2.mp3: 2
+2026-06-16 13:30:02 [INFO] Track number extracted for /mnt/c/Users/jlrus/audiobooks_work/staging/book/Part 3.mp3: 3
+2026-06-16 13:30:02 [INFO] Track number extracted for /mnt/c/Users/jlrus/audiobooks_work/staging/book/Part 4.mp3: 4
+2026-06-16 13:30:02 [INFO] Track number extracted for /mnt/c/Users/jlrus/audiobooks_work/staging/book/Part 5.mp3: 5
+2026-06-16 13:30:02 [INFO] Track number extracted for /mnt/c/Users/jlrus/audiobooks_work/staging/book/Part 6.mp3: 6
+2026-06-16 13:30:03 [INFO] Track number extracted for /mnt/c/Users/jlrus/audiobooks_work/staging/book/Part 7.mp3: 7
+2026-06-16 13:30:03 [INFO] Folder-book validation complete: /mnt/c/Users/jlrus/audiobooks_work/staging/book
+2026-06-16 13:30:03 [INFO] Folder-book metadata used for /mnt/c/Users/jlrus/audiobooks_work/staging/book: {'narrator': 'Kirby Heyborne', 'title': 'Chapter 01', 'subtitle': 'Fire and Steel, Vol. 1', 'album': 'A Generation Rising', 'artist': 'Gerald N. Lund', 'albumartist': 'Gerald N. Lund', 'series': 'Fire and Steel', 'series-part': '1', 'genre': 'Literature & Fiction / Genre Fiction / Sagas', 'date': '2024', 'description': "From master storyteller Gerald N. Lund comes the next blockbuster historical fiction series, Fire and Steel, Volume One: A Generation Rising, blending the powerful stories of two families on different continents the Eckhardts in southern Germany and the Westlands in southern Utah. While their circumstances are as divergent as their geography, each family must cope with trials that test their courage and fortitude. Spanning more than sixty years, the series follows the Eckhardts and the Westlands through some of the most turbulent times in history, including World War I, the Great Depression, the rise of Nazi Germany, and the Second World War with its devastating aftermath. In volume one, A Generation Rising, life could not be more promising for the Eckhardts. They finally have a son, Hans Otto Eckhardt, the male heir they have longed for and a child of such brilliance and promise that his success seems certain. But as youthful Hans's ambition takes him away from his family and their small Bavarian village, the winds of unrest in Europe are about to erupt into the greatest war the world has ever known.", 'publisher': 'Deseret Book Company', 'language': 'english', 'asin': 'B0DM3VB9TM', 'isbn': '9781649333858', 'author': 'Gerald N. Lund'}
+2026-06-16 13:30:03 [INFO] Folder-book metadata for /mnt/c/Users/jlrus/audiobooks_work/staging/book: author='Gerald N. Lund' inferred=False; album='A Generation Rising' inferred=False; asin='B0DM3VB9TM'; target_bitrate_source=override=64 kbps; target_channels_source=override=1; dramatic_audio_status=explicit false
+2026-06-16 13:30:03 [INFO] Conversion decision for /mnt/c/Users/jlrus/audiobooks_work/staging/book: raw=160 kbps, normalized=160 kbps, source_channels=2, output_channels=1, target=64 kbps
+2026-06-16 13:30:03 [INFO] Using folder-book metadata ASIN for /mnt/c/Users/jlrus/audiobooks_work/staging/book: B0DM3VB9TM
+2026-06-16 13:30:03 [INFO] Converting /mnt/c/Users/jlrus/audiobooks_work/staging/book to temporary output /mnt/c/Users/jlrus/audiobooks_work/processed/Gerald N. Lund - A Generation Rising.tmp.m4b
+2026-06-16 13:32:52 [INFO] FFmpeg conversion completed for /mnt/c/Users/jlrus/audiobooks_work/staging/book
+2026-06-16 13:32:52 [WARNING] Metadata appears missing in output: narrator
+2026-06-16 13:32:52 [WARNING] Metadata appears missing in output: subtitle
+2026-06-16 13:32:52 [WARNING] Metadata appears missing in output: albumartist
+2026-06-16 13:32:52 [WARNING] Metadata appears missing in output: series
+2026-06-16 13:32:52 [WARNING] Metadata appears missing in output: series-part
+2026-06-16 13:32:52 [WARNING] Metadata appears missing in output: publisher
+2026-06-16 13:32:52 [WARNING] Metadata appears missing in output: asin
+2026-06-16 13:32:52 [WARNING] Metadata appears missing in output: isbn
+2026-06-16 13:32:52 [WARNING] Metadata appears missing in output: author
+2026-06-16 13:32:52 [INFO] Validation successful: /mnt/c/Users/jlrus/audiobooks_work/processed/Gerald N. Lund - A Generation Rising.tmp.m4b
+2026-06-16 13:32:52 [INFO] Promoted temporary output using os.replace: /mnt/c/Users/jlrus/audiobooks_work/processed/Gerald N. Lund - A Generation Rising.tmp.m4b -> /mnt/c/Users/jlrus/audiobooks_work/processed/Gerald N. Lund - A Generation Rising.m4b
+2026-06-16 13:32:52 [INFO] Promoted temporary output to final output: /mnt/c/Users/jlrus/audiobooks_work/processed/Gerald N. Lund - A Generation Rising.m4b
+2026-06-16 13:32:52 [INFO] Embedded cover art preserved from /mnt/c/Users/jlrus/audiobooks_work/staging/book/Gerald N. Lund - A Generation Rising B0DM3VB9TM..mp3 to /mnt/c/Users/jlrus/audiobooks_work/processed/Gerald N. Lund - A Generation Rising.m4b
+2026-06-16 13:32:52 [INFO] Removed existing metadata variant: ©ART
+2026-06-16 13:32:53 [INFO] Mutagen final metadata pass succeeded for /mnt/c/Users/jlrus/audiobooks_work/processed/Gerald N. Lund - A Generation Rising.m4b
+2026-06-16 13:32:53 [INFO] Archived original to /mnt/c/Users/jlrus/audiobooks_work/converted/book
+2026-06-16 13:32:53 [INFO] Conversion and archive successful for /mnt/c/Users/jlrus/audiobooks_work/staging/book
+2026-06-16 13:32:53 [INFO] Folder-book processing ended: book
+2026-06-16 13:32:53 [INFO] Terminal settings restored after folder-book processing: book
+2026-06-16 13:32:53 [INFO] Progress: 2/2 processed; 0 remaining; 2 converted; 0 skipped; 0 failed
+2026-06-16 13:32:53 [INFO] Finished audiobook conversion
+2026-06-16 13:32:53 [INFO] Summary: Processing Complete; Books Found: 2; Books Processed: 2; Remaining: 0; Converted: 2; Single-File Books Processed: 1; Folder Books Processed: 1; Single Files Converted: 1; Folder Books Converted: 1; Folder Books Skipped: 0; Folder Books Failed: 0; Skipped: 0; Failed: 0; Elapsed Time: 00:05:51
+2026-06-16 13:32:53 [INFO] Run history totals: converted=2, single_files_processed=1, folder_books_processed=1, single_files_converted=1, folder_books_converted=1, folder_books_skipped=0, folder_books_failed=0, original_bytes=1220622897, converted_bytes=559270539, diff_bytes=661352358, pct_diff=54.18, runtime=00:05:51
+2026-06-16 13:32:53 [INFO] Appended run history CSV row to /home/jlrus/projects/alchemist/audiobook_converter_runs.csv
+2026-06-16 13:32:53 [INFO] Shutdown complete

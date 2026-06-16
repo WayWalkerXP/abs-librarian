@@ -1,0 +1,3 @@
+date,time,numBooksProcessed,numSingleFilesProcessed,numFolderBooksProcessed,numSingleFilesConverted,numFolderBooksConverted,numFolderBooksSkipped,numFolderBooksFailed,numBytesOriginal,numBytesAfterConversion,numBytesDiff,pctDiff,runTime
+2026-06-16,13:15:21,3,3,0,3,0,0,0,2069709188,1065426258,1004282930,48.52,00:10:27
+2026-06-16,13:32:53,2,1,1,1,1,0,0,1220622897,559270539,661352358,54.18,00:05:51

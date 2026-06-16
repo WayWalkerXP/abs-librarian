@@ -216,3 +216,10 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Project specific files
+audiobook_converter.ini
+*.csv
+*.log
+*.lock
+
